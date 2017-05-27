@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>JDStore </title>
+        <title>经典电影网 </title>
         <%= csrf_meta_tags %>
 
         <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
         <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+        <link rel="shortcut icon" href="/images/video-camera.png">
     </head>
 
     <body>
 
         <div class="container-fluid">
+          <div class="row">
             <%= render "common/navbar" %>
+            </div>
             <%= render "common/flashes" %>
             <%= yield %>
         </div>
