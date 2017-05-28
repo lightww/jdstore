@@ -53,31 +53,35 @@ puts "User 建立成功"
 #   )
 #   puts "Product 2 建立成功"
 #
-# Product.create!(
-#   title: "阿甘正传 Forrest Gump (1994)",
-#   description: "阿甘（汤姆·汉克斯 饰）于二战结束后不久出生在美国南方阿拉巴马州一个闭塞的小镇，他先天弱智，智商只有75，然而他的妈妈是一个性格坚强的女性，她常常鼓励阿甘“傻人有傻福”，要他自强不息。
-# 　　阿甘像普通孩子一样上学，并且认识了一生的朋友和至爱珍妮（罗宾·莱特·潘 饰），在珍妮和妈妈的爱护下，阿甘凭着上帝赐予的“飞毛腿”开始了一生不停的奔跑。
-# 　　阿甘成为橄榄球巨星、越战英雄、乒乓球外交使者、亿万富翁，但是，他始终忘不了珍妮，几次匆匆的相聚和离别，更是加深了阿甘的思念。
-# 　　有一天，阿甘收到珍妮的信，他们终于又要见面……  ",
-#   price:8,
-#   quantity:120,
-#   image: open("https://support.apple.com/content/dam/edam/applecare/images/en_US/macbook/psp-mini-hero-macbook_2x.png")
-#     )
-#     puts "Product 3 建立成功"
 
-products_info = [
- {title: 'a', description: '4',image: 'http://ww4.sinaimg.cn/large/006tNbRwgy1ffrq4hl3blj30rs0jqdjg.jpg'},
- {title: 'b', description: '3',image: 'http://ww2.sinaimg.cn/large/006tNbRwgy1ffrqa6g8lbj30i80r540z.jpg'},
- {title: 'c', description: '2',image: 'http://ww4.sinaimg.cn/large/006tNbRwgy1ffrqaet2crj308c0693yt.jpg'},
- {title: 'd', description: '1',image: 'http://ww3.sinaimg.cn/large/006tNbRwgy1ffrqalyuc6j30dw09bgm7.jpg'},
-]
 
-products_info.each do |info|
-  	 Product.create!(
-		 title: info[:title],
-		 description: info[:description],
-		 quantity: rand(5..6),
-		 price: rand(5..6),
-		 image: open(info[:image])
-		 )
- end
+Product.create!(
+  title: "阿甘正传 Forrest Gump (1994)",
+  description: "阿甘（汤姆·汉克斯 饰）于二战结束后不久出生在美国南方阿拉巴马州一个闭塞的小镇，他先天弱智，智商只有75，然而他的妈妈是一个性格坚强的女性，她常常鼓励阿甘“傻人有傻福”，要他自强不息。
+　　阿甘像普通孩子一样上学，并且认识了一生的朋友和至爱珍妮（罗宾·莱特·潘 饰），在珍妮和妈妈的爱护下，阿甘凭着上帝赐予的“飞毛腿”开始了一生不停的奔跑。
+　　阿甘成为橄榄球巨星、越战英雄、乒乓球外交使者、亿万富翁，但是，他始终忘不了珍妮，几次匆匆的相聚和离别，更是加深了阿甘的思念。
+　　有一天，阿甘收到珍妮的信，他们终于又要见面……  ",
+  price:8,
+  quantity:120,
+image: open('https://support.apple.com/content/dam/edam/applecare/images/en_US/macbook/psp-mini-hero-macbook_2x.png')
+    )
+    puts "Product 3 建立成功"
+
+# require 'rest-client'
+#
+# products_info = [
+#  {title: 'a', description: '4',image: 'http://ww4.sinaimg.cn/large/006tNbRwgy1ffrq4hl3blj30rs0jqdjg.jpg'},
+#  {title: 'b', description: '3',image: 'http://ww2.sinaimg.cn/large/006tNbRwgy1ffrqa6g8lbj30i80r540z.jpg'},
+#  {title: 'c', description: '2',image: 'http://ww4.sinaimg.cn/large/006tNbRwgy1ffrqaet2crj308c0693yt.jpg'},
+#  {title: 'd', description: '1',image: 'http://ww3.sinaimg.cn/large/006tNbRwgy1ffrqalyuc6j30dw09bgm7.jpg'},
+# ]
+#
+# products_info.each do |info|
+#   	 Product.create!(
+# 		 title: info[:title],
+# 		 description: info[:description],
+# 		 quantity: rand(5..6),
+# 		 price: rand(5..6),
+# 		 image: RestClient.get info[:image]
+# 		 )
+#  end
