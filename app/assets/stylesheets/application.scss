@@ -19,11 +19,12 @@
  @import "font-awesome";
 
  .jumbotron {
-    background-image: url(https://ws1.sinaimg.cn/large/006tKfTcly1ffw19h1ikwj31kw12ge86.jpg);
+      background-image: url(http://samhundley.com/wp-content/uploads/2011/03/81oscarposters.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 1100px;
     margin: 0 -15px 20px;
+    background-color: transparent;
 }
 
 .title {
