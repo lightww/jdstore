@@ -14,5 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require autosize.min
+//= require jquery.countdown.min
+//= require wow.min
 
 //= require_tree .
