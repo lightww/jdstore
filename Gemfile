@@ -44,6 +44,7 @@ gem 'annotate'
 
 gem 'carrierwave-qiniu'
 gem 'qiniu-rs'
+gem 'figaro'
 
 
 group :development, :test do
