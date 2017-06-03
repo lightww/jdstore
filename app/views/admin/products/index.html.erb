@@ -1,8 +1,8 @@
 <h2> Product List </h2>
 <div class="pull-right" style="padding-bottom: 20px;">
-  <%= link_to("新增产品", new_admin_product_path, class: "btn btn-primary btn-sm") %>
+  <%= link_to("新增产品", new_admin_product_path, class: "btn btn-raised btn-primary btn-sm") %>
 </div>
-<table class="table table-boldered table-striped table-hover custab" >
+<table class="table table-bordered table-striped table-hover " >
   <thead>
     <tr>
       <th>#</th>
@@ -34,7 +34,7 @@
           <%= product.price %>
         </td>
         <td>
-          <%= link_to("Edit", edit_admin_product_path(product)) %>
+          <%= link_to("Edit", edit_admin_product_path(product),class: "btn btn-raised btn-primary btn-sm") %>
         </td>
       </tr>
     <% end %>

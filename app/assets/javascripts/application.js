@@ -17,5 +17,12 @@
 //= require autosize.min
 //= require jquery.countdown.min
 //= require wow.min
+//= require jquery.sharrre
+//= require jquery-1.11.2.min
+//= require jquery.waypoints.min
+//= require modernizr
+//= require rubick_pres
+//= require ripples.min
+//= require material.min
 
 //= require_tree .

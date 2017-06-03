@@ -1,3 +1,33 @@
+<div class="container">
+  <div class="row">
+    <% @products.each do |product| %>
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading"><%= product.title %></div>
+        <div class="panel-body">
+          <%= link_to product_path(product) do %>
+            <% if product.image.present? %>
+              <%= image_tag(product.image.thumb.url, class: "img-responsive",style:"width:100%") %>
+            <% else %>
+              <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "") %>
+            <% end %>
+          <% end %>
+        <div class="panel-footer">
+          <div class="pull-left">
+          <small><strong>￥ <%= product.price %></strong></small>
+        </div>
+        <div class="pull-right">
+          <%= link_to("加入购物车",add_to_cart_product_path(product),:method=>:post,class:"btn btn-raised btn-danger") %>
+        </div>
+      </div>
+
+  </div>
+  </div>
+  </div>
+    <% end %>
+</div>
+
+    ---------------------
 <div class="row">
 
 
@@ -21,7 +51,7 @@
   <br>
 </div>
 
-/-----------分页----------/
+<!-- /-分页/ -->
 <nav class="text-center" aria-label="Page navigation">
   <ul class="pagination">
     <li>

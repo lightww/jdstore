@@ -3,7 +3,7 @@
 
     <h2> 购物明细 </h2>
 
-    <table class="table table-bordered">
+    <table class="table table-bordered table-striped table-hover">
       <thead>
         <tr>
           <th width="80%">商品明细</th>
@@ -14,7 +14,7 @@
       <tbody>
 
         <% current_cart.cart_items.each do |cart_item| %>
-          <tr>
+          <tr >
             <td>
               <%= link_to(cart_item.product.title, product_path(cart_item.product)) %>
             </td>
@@ -65,7 +65,7 @@
           </div>
 
         <div class="checkout">
-          <%= f.submit "生成订单", class: "btn btn-lg btn-danger pull-right",
+          <%= f.submit "生成订单", class: "btn btn-raised btn-danger pull-right",
                        data: { disable_with: "Submitting..." } %>
         </div>
       <% end %>

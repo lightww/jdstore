@@ -18,6 +18,11 @@
  @import "bootstrap";
  @import "font-awesome";
  @import "animate.min";
+ @import "rubick_pres";
+ @import "pe-icon-7-stroke";
+ @import "Rubik-Fonts";
+ @import "ripples.min";
+ @import "bootstrap-material-design.min";
 
 //  .jumbotron {
 //       background-image: url(http://samhundley.com/wp-content/uploads/2011/03/81oscarposters.jpg);
@@ -290,48 +295,48 @@
 //---------NIC---------
  //---------Navbar---------
 
-  .navbar-default {
-     background-color: #212121;
-     border-color: #212121;
-     margin-bottom: 0;
-     border-radius: 0;
- }
-
- .navbar-default .navbar-brand {
-     color: #EF6C00;
-     padding: 10px 15px;
-     line-height: 30px;
- }
-
- .navbar-default .navbar-brand:hover,
- .navbar-default .navbar-brand:focus {
-     color: #FF6F00;
-     background-color: transparent;
- }
-
- .navbar-default .navbar-nav > li > a {
-     color: #EF6C00;
- }
-
- .navbar-default .navbar-nav > li > a:hover,
- .navbar-default .navbar-nav > li > a:focus {
-     color: #FF6F00;
-     background-color: transparent;
- }
-
- .navbar-default .navbar-nav > .active > a,
- .navbar-default .navbar-nav > .active > a:hover,
- .navbar-default .navbar-nav > .active > a:focus {
-     color: #FF6F00;
-     background-color: #FFE0B2;
- }
-
- .navbar-default .navbar-nav > .open > a,
- .navbar-default .navbar-nav > .open > a:focus,
- .navbar-default .navbar-nav > .open > a:hover {
-     background-color: #FFE0B2;
-     color: #212121;
- }
+ //  .navbar-default {
+ //     background-color: #212121;
+ //     border-color: #212121;
+ //     margin-bottom: 0;
+ //     border-radius: 0;
+ // }
+ //
+ // .navbar-default .navbar-brand {
+ //     color: #EF6C00;
+ //     padding: 10px 15px;
+ //     line-height: 30px;
+ // }
+ //
+ // .navbar-default .navbar-brand:hover,
+ // .navbar-default .navbar-brand:focus {
+ //     color: #FF6F00;
+ //     background-color: transparent;
+ // }
+ //
+ // .navbar-default .navbar-nav > li > a {
+ //     color: #EF6C00;
+ // }
+ //
+ // .navbar-default .navbar-nav > li > a:hover,
+ // .navbar-default .navbar-nav > li > a:focus {
+ //     color: #FF6F00;
+ //     background-color: transparent;
+ // }
+ //
+ // .navbar-default .navbar-nav > .active > a,
+ // .navbar-default .navbar-nav > .active > a:hover,
+ // .navbar-default .navbar-nav > .active > a:focus {
+ //     color: #FF6F00;
+ //     background-color: #FFE0B2;
+ // }
+ //
+ // .navbar-default .navbar-nav > .open > a,
+ // .navbar-default .navbar-nav > .open > a:focus,
+ // .navbar-default .navbar-nav > .open > a:hover {
+ //     background-color: #FFE0B2;
+ //     color: #212121;
+ // }
 
 
  //---------Box---------
@@ -407,18 +412,23 @@
 
 
 
-  .footer {
-    position: relative;
-    bottom: 0px;
-    width: 100%;
-    height: 60px;
-}
- footer .footer-below {
-     padding: 5px 0;
-     background-color: #233140;
-     color: white;
- }
+//   .footer {
+//     position: relative;
+//     bottom: 0px;
+//     width: 100%;
+//     height: 60px;
+// }
 
+
+ footer .footer-below {
+    padding: 5px 0;
+    background-color: #009688;
+    color: white;
+}
+
+.footer {
+    background-color: #009688;
+}
  .panel {
     margin-top: 10px;
   }
@@ -429,9 +439,30 @@
 
 .thumbnail {
   border: solid #ddd;
-    
+
 }
 
 .btn-danger {
     margin-left: 55px;
 }
+
+
+
+
+.navbar .navbar-nav > li > a {
+    padding: 0;
+    margin: 14px 8px 0px 8px;
+}
+
+  .navbar .navbar-brand {
+    margin: -11px 0px;
+}
+
+.navbar .btn {
+    margin: -5px 3px;
+    font-size: 14px;
+}
+
+.alert.alert-success {
+    background-color: #009688;
+  }
